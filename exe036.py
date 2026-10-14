@@ -15,7 +15,7 @@ limite = sal * 30 / 100
 
 print("\033[1;43m-------EMPRÉSTIMO BANCÁRIO---------\033[m")
 
-if parc < limite :
+if parc <= limite :
     print("PARABÉNS PELA NOVA CONQUISTA")
     print("Seu empréstimo foi aprovado!")
     print("VAlOR TOTAL CASA: R${}".format(casa))
