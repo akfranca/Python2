@@ -19,11 +19,11 @@ print("[3] HEXADECIMAL")
 base = int(input("Digite sua base? "))
 
 if base == 1:
-    print(binario)
+    print(binario[2:])
 elif base == 2:
-    print(octal)
+    print(octal[2:])
 elif base == 3:
-    print(hexa)
+    print(hexa[2:])
 else:
     print("Escolha inválida")
 
