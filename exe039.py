@@ -11,6 +11,7 @@ from datetime import date
 alistam = date.today()
 
 nasc = int(input("Digite sua data de nascimento: "))
+sexo = input('Digite o sexo [M/F]: ').upper()
 idade = alistam.year - nasc
 print("Ano de nascimento: {} e você tem {} anos.".format(nasc, idade))
 
@@ -18,7 +19,8 @@ ano_alistam = alistam.year
 alistado = idade - 18
 novo = 18 - idade
 
-if idade > 18:
+if sexo == 'M':
+ if idade > 18:
     print("Era para você ter se alistado a {} anos atrás".format(alistado))
     print("Seu alistamento foi em {}!".format(ano_alistam - alistado))
 elif idade < 18:
@@ -26,6 +28,8 @@ elif idade < 18:
     print("Seu alistamento será em {}!".format(ano_alistam + novo))
 elif idade == 18:
     print("Você deve se alistar IMEDIATAMENTE!")
+else:
+    print('Você não precisa de alistamento')
 
 
 
