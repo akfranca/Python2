@@ -30,6 +30,8 @@ elif menu == 4:
     juros =  preco + (preco * 20 / 100)
     pgt4 = juros / parc
     print('Sua compra será parcelada em {}x de R${:.2f} com o juros de 20% o total de sua compra sairá por R${}'.format(parc, pgt4, juros))
+else:
+    print('OPÇÃO INVÁLIDA, tente novamente!')
 
 
 
