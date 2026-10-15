@@ -2,7 +2,7 @@
 import time
 import random
 print("""===============
-\033[1;7;30;42mJO KEN PO!!!\033[m
+\033[32mJO KEN PO!!!\033[m
 ===============""")
 time.sleep(1)
 print("""OPÇÕES DE JOGADAS:
@@ -22,16 +22,18 @@ time.sleep(1)
 opcoes = ['PEDRA', 'PAPEL', 'TESOURA']
 cpu = random.choice(opcoes)
 
-print('JOGADOR ESCOLHEU {}'.format (opcoes[jogada]))
-print('COMPUTADOR ESCOLHEU {}'.format (cpu))
+print('-=-'* 10)
+print('\033[32mJOGADOR\033[m ESCOLHEU \033[32m{}\033[m'.format (opcoes[jogada]))
+print('\033[33mCOMPUTADOR\033[m ESCOLHEU \033[33m{}\033[m'.format (cpu))
+print('-=-'* 10)
 
 if cpu == opcoes[jogada]:
-    print('EMPATE')
+    print('\033[31mEMPATE\033[m')
 elif cpu == 'PEDRA' and opcoes[jogada] == 'PAPEL':
-    print('JOGADOR VENCEU')
+    print('\033[32mJOGADOR VENCEU\033[m')
 elif cpu == 'TESOURA' and opcoes[jogada] == 'PEDRA':
-    print('JOGADOR VENCEU')
+    print('\033[32mJOGADOR VENCEU\033[m')
 elif cpu == 'PAPEL' and opcoes[jogada] == 'TESOURA':
-    print('JOGADOR VENCEU')
+    print('\033[32mJOGADOR VENCEU\033[m')
 else:
-    print('COMPUTADOR VENCEU')
+    print('\033[33mCOMPUTADOR VENCEU\033[m')
