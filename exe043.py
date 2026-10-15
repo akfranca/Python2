@@ -7,17 +7,17 @@ calcule o seu IMC e mostre seu status, de acordo com a tabela abaixo:
 -30 até 40: obesidade
 -Acima de 40: obesidade mórbida"""
 
-peso = float(input('Digite seu peso: '))
-altura = float(input('Digite sua altura: '))
+peso = float(input('Digite seu peso: (KG) '))
+altura = float(input('Digite sua altura: (M) '))
 imc = peso / altura ** 2
 
 if imc < 18.5:
     status = 'ABAIXO DO PESO!'
-elif imc >= 18.5 and imc <= 25:
+elif 25 > imc >= 18.5:
     status = 'com PESO IDEAL!'
-elif imc >= 25 and imc <= 30:
+elif 30 > imc >= 25:
     status = 'com SOBREPESO'
-elif imc >= 30 and imc <= 40:
+elif 40 > imc >= 30:
     status = 'com OBESIDADE!'
 else:
     status = 'com OBESIDADE MÓRBIDA!'
