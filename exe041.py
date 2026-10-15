@@ -4,7 +4,7 @@ de um atleta e mostre sua categoria, de acordo com sua idade:
 -Até 09 anos: MIRIM
 -Até 14 anos: INFANTIL
 -Até 19 anos: JUNIOR
--Até 20 anos: SÊNIOR
+-Até 25 anos: SÊNIOR
 -Acima: MASTER"""
 
 from datetime import date
@@ -21,7 +21,7 @@ elif idade <= 14:
     print("Você tem {} anos e está na categoria INFANTIL".format(idade))
 elif idade <= 19:
     print("Você tem {} anos e está na categoria JUNIOR".format(idade))
-elif idade <= 20:
+elif idade <= 25:
     print("Voê tem {} anos e está na categoria SÊNIOR".format(idade))
-elif idade > 20:
+elif idade > 25:
     print("Você tem {} anos e está na categoria MASTER".format(idade))
