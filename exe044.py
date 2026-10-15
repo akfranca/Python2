@@ -6,6 +6,8 @@ considerando o seu preço normal e condição de pagamento:
 -em até 2x no cartão: preço normal
 -3x ou mais no cartão: 20% juros"""
 
+print('{:=^40}'.format(' LOJAS AKFRANCA '))
+
 preco = float(input('Valor das compras: R$'))
 print("""ESCOLHA FORMA DE PAGAMENTO
 [1] À VISTA DINHEIRO/CHEQUE
