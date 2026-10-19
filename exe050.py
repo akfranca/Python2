@@ -2,9 +2,12 @@
 daqueles que forem pares. Se o valor digitado for ímpar, desconsidere-o."""
 
 soma = 0
+cont = 0
 for c in range(1, 7):
-    num = int(input('Digite um número: '))
+    num = int(input('Digite o {}º número: '.format(c)))
     if num % 2 == 0:
         soma += num
-print('A somatória dos números pares é: {}'.format(soma))
+        cont += 1
+print('Você informou {} números pares e a somatória entre eles é {}.'.format(cont, soma))
+
 
