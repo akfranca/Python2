@@ -14,5 +14,3 @@ for c in range(1, 6):
             menor = peso
 print('O MAIOR peso entre os cinco é {:.1f}.'.format(maior))
 print('O MENOR peso entre os cinco é {:.1f}.'.format(menor))
-
-
