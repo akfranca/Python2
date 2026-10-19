@@ -7,7 +7,7 @@ hoje = date.today().year
 maiores = 0
 menores = 0
 for cont in range (1, 8):
-    nasc = int(input('Digite o ano de nascimento: '))
+    nasc = int(input('Em que ano a {}ª pessoa nasceu? '.format(cont)))
     idade = hoje - nasc
     if idade >= 21:
         maiores +=1
