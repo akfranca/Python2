@@ -7,7 +7,8 @@ razao = int(input('Digite a razao: '))
 c = 0
 while c < 10:
     c += 1
-    print('{}'.format(termo + razao), end=' -> ')
+    print('{}'.format(termo), end=' -> ')
     termo += razao
+print('FIM')
 
 
