@@ -6,9 +6,11 @@ n = int(input('Digite um número para saber seu fatorial: '))
 cont = 1
 num = n
 while n >= 1:
+    print('{}x...'.format(n), end=' ')
     cont = cont * n
     n -= 1
-print('O fatorial de {} é: {}...'.format(num, cont))
+print('\nO fatorial de {} é: {}...'.format(num, cont))
+
 
 
 
