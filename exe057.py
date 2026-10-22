@@ -13,7 +13,7 @@ while resp not in 'MF':
     if resp != 'M' and resp != 'F':
         print('Sexo inválido, tente novamente.')
 
-print('Obrigada pela resposta, volte sempre!')
+print('Sexo resgistrado com sucesso!')
 
 
 
