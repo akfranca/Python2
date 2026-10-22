@@ -5,7 +5,7 @@ um valor correto."""
 
 resp = 'n'
 while resp not in 'MF':
-    resp = str(input('Qual seu sexo? [M/F]: ')).strip().upper()
+    resp = str(input('Qual seu sexo? [M/F]: ')).strip().upper()[0]
     if resp == 'M':
         print('Sexo Masculino')
     if resp == 'F':
