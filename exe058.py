@@ -21,10 +21,16 @@ while cpu != num:
         sleep(3)
         print(emoji.emojize('UAAL :exploding_head:! Você disse {} e eu pensei em {}. PARABÉNS!'.format(num, cpu)))
     if cpu != num:
-        print('PROCESSANDO...')
-        sleep(3)
-        print(emoji.emojize('Que pena :disappointed_face: ! Mas você pode tentar novamente...'))
-        sleep(1)
+        if num > cpu:
+            print('PROCESSANDO...')
+            sleep(3)
+            print(emoji.emojize('Que pena :disappointed_face: ! Tente um número MENOR...'))
+            sleep(1)
+        if num < cpu:
+            print('PROCESSANDO...')
+            sleep(3)
+            print(emoji.emojize('Que pena :disappointed_face: ! Tente um número MAIOR...'))
+            sleep(1)
 
 print(emoji.emojize('Você tentou {} vezes até acertar. :face_with_hand_over_mouth:'.format(cont)))
 
