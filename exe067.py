@@ -6,15 +6,22 @@ O programa será interrompido quando o número solicitado for negativo."""
 print('-' * 30)
 print('PROGRAMA DE TABUADA')
 print('-' * 30)
-cont = 1
 num = int(input('Digite um número para saber sua tabuada: '))
 while True:
+    cont = 1
     while cont <= 10:
         print(f'{num} x {cont} = {num * cont}')
         cont += 1
+    print('-' *30)
     num = int(input('Digite um número para saber sua tabuada: '))
     if num < 0:
+        print('-' * 30)
         break
+print('PROGRAMA TABUADA FINALIZADO...')
+
+
+
+
 
 
 
