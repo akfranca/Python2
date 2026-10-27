@@ -8,18 +8,31 @@ C)Qual o nome do produto mais barato?"""
 resp = 'S'
 soma = 0
 cont = 0
+menor = 0
+menor_produto = ''
+menor_preco = 0
 while True:
     while resp == 'S':
         produto = str(input('Nome do produto: '))
         preco = float(input('Valor do produto: '))
+        if menor_produto == '':
+            menor = preco
+            menor_produto = produto
+            menor_preco = preco
+        elif preco < menor:
+            menor = preco
+            menor_produto = produto
+            menor_preco = preco
         soma += preco
         if preco > 1000:
             cont += 1
         resp = str(input('Deseja continuar? [S/N] ')).upper().strip()
+        while resp != 'S' and resp != 'N':
+            resp = str(input('Deseja continuar? [S/N] ')).upper().strip()
     if resp == 'N':
         break
-print(f'O total da compra ficou: R${soma:.2f}.')
+print('-'*30)
+print(f'TOTAL da compra ficou: R${soma:.2f}.')
 print(f'{cont} produtos custam mais de R$1000.')
-print(f'O produto mais barato da lista é {produto} custando R${preco:.2f}.')
-
+print(f'PRODUTO MAIS BARATO da lista é {menor_produto} custando R${menor_preco:.2f}.')
 
