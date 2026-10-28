@@ -23,7 +23,7 @@ while True:
         resp = str(input('Quer continuar? [S/N]: ')).upper().strip()
         while resp != 'S' and resp != 'N':
             resp = str(input('Quer continuar? [S/N] ')).upper().strip()
-        if idade > 18:
+        if idade >= 18:
             somai += 1
         if sexo == 'M':
             somah += 1
